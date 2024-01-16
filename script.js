@@ -1,16 +1,3 @@
-function mostrarMensaje() {
-    alert("Te amo");
-}
-
-function moverBoton() {
-    var button = document.getElementById("noButton");
-    var newX = Math.random() * (window.innerWidth - button.offsetWidth);
-    var newY = Math.random() * (window.innerHeight - button.offsetHeight);
-
-    button.style.left = newX + "px";
-    button.style.top = newY + "px";
-}
-
 var contadorNo = 0;
 
 function mostrarMensaje() {
@@ -27,7 +14,7 @@ function moverBoton() {
 
         button.style.left = newX + "px";
         button.style.top = newY + "px";
-    } else {
+    } else if (contadorNo === 5) {
         alert("Sabes que la única opción es el 'Sí'");
     }
 }

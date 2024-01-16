@@ -14,7 +14,7 @@ function moverBoton() {
 
         button.style.left = newX + "px";
         button.style.top = newY + "px";
-    } else if (contadorNo === 5) {
+    } else {
         alert("Sabes que la única opción es el 'Sí'");
     }
 }
